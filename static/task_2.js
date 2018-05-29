@@ -28,4 +28,5 @@ const cart = fetch('/cart/0')
     .then(cart => cart.json());
 
 Promise.all([users, good, cart])
-    .then((a, b, c) => console.log(a, b, c));
+    .then((a, b, c) => console.log(a, b, c))
+    .catch(e => console.log(e));
